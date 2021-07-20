@@ -57,6 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!135 &8456108076515539634
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -187,7 +189,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4341738528061809418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90808b0f152c04818b1c2ca62e1dbb07, type: 3}
+  m_Script: {fileID: 11500000, guid: 561b551f9f787f6468bff3b3b0de2ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 5
@@ -207,7 +209,7 @@ GameObject:
   - component: {fileID: 4341738528604915594}
   - component: {fileID: 4341738528604915595}
   - component: {fileID: 4341738528604915599}
-  - component: {fileID: 5490197564724495837}
+  - component: {fileID: 5641438681355926966}
   m_Layer: 0
   m_Name: ThirdPersonPlayer_WithCamera
   m_TagString: Player
@@ -253,6 +255,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -277,6 +280,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!136 &4341738528604915595
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -307,7 +311,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &5490197564724495837
+--- !u!114 &5641438681355926966
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,7 +320,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4341738528604915604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3abea38f9708b42b0b961076cbc20f25, type: 3}
+  m_Script: {fileID: 11500000, guid: e2f8c0a8ec79a2c40912cdebb9694d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 300
+  speed: 10
+  maxGroundDistance: 1.5
+  allowDoubleJump: 0
